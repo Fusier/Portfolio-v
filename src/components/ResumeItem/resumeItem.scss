@@ -1,0 +1,37 @@
+.resume-item {
+  position: relative;
+  width: 70%;
+  background-color: rgb(15, 15, 15);
+  margin-bottom: 40px;
+  justify-self: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -40px;
+    width: 2px;
+    background-color: deepskyblue;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    align-self: anchor-center;
+    left: -100px;
+    width: 30px;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .resume-content {
+    padding: 15px;
+  }
+
+  &:last-child::before {
+    bottom: 0;
+  }
+}
