@@ -1,8 +1,6 @@
 import React from "react";
 import "./about-page.scss";
-import samuAboutImage from "../../assets/samu_casual.jpg";
-import DownloadIcon from "@mui/icons-material/Download";
-import { Button } from "@mui/material";
+import samuAboutImage from "../../assets/samu_beach.jpg";
 
 const AboutPage: React.FC = () => {
   return (
@@ -68,18 +66,6 @@ const AboutPage: React.FC = () => {
               Spoken Languages:
               <span className="sub-text"> Finnish, English, Swedish</span>
             </p>
-          </div>
-          <div className="padding-top">
-            <Button
-              variant="contained"
-              className="button-color"
-              sx={{
-                borderRadius: 0,
-              }}
-              startIcon={<DownloadIcon className="vertical-align-middle" />}
-            >
-              Download CV
-            </Button>
           </div>
         </div>
       </div>

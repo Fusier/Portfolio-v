@@ -42,6 +42,7 @@ const ContactForm: React.FC = () => {
       });
       setSentState(true);
     } else {
+      setSentState(false);
     }
   };
   return (

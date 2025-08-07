@@ -7,9 +7,11 @@ import { MdEmail } from "react-icons/md";
 
 const ContactPage: React.FC = () => {
   return (
-    <section id="contact" className="contact">
-      <h2 className="section-title">Get in Touch</h2>
-      <div className="form-section">
+    <section id="contact" className="form-section">
+      <div>
+        <h2 className="about-title">Get in Touch</h2>
+      </div>
+      <div className="main">
         <div className="column">
           <h3 className="message-me">Message Me</h3>
           <ContactForm />

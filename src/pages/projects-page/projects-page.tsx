@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home-page.scss";
+import "./projects-page.scss";
 import MBTASchedule from "../../assets/MBTA_schedules.png";
 import Card from "../../components/Card/card";
 

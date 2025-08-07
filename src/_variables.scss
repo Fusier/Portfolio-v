@@ -1,0 +1,19 @@
+$mobile-landscape: 568px;
+$tablet: 768px;
+$desktop: 992px;
+$small: 5px;
+$medium: 10px;
+$large: 15px;
+$extra-large: 20px;
+
+$footer-height: 56px;
+$navbar-height: 75px;
+
+$section-height: calc(100vh - $navbar-height - $footer-height);
+
+// Dark mode:
+$main-text-color: white;
+$highlight-color: deepskyblue;
+$social-icons-color: #333;
+
+// Light mode:

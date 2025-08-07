@@ -1,27 +1,19 @@
 $mobile-landscape: 568px;
 $tablet: 768px;
 $desktop: 992px;
-$section-heigh: 100vh;
-
-.homepage {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  scroll-margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.9);
-}
 
 .navbar {
+  margin: 0;
   position: relative;
-  margin-bottom: -75px;
   z-index: 1000;
   height: 25px;
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 50px;
+  padding: 25px 0px 25px 0px;
   transition: all 0.3s ease;
+  width: 100%;
 
   ._logo {
     font-family: "Poppins", cursive;
@@ -40,7 +32,7 @@ $section-heigh: 100vh;
     display: flex;
     gap: 20px;
     margin: 0;
-    padding: 0;
+    padding-right: 50px;
   }
 
   ._anchor ul li a {
@@ -49,13 +41,20 @@ $section-heigh: 100vh;
   }
 }
 
-.nav-indicator {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  background: #c99752;
-  border-radius: 2px;
-  transition: transform 0.3s ease;
-  z-index: 0;
+.button {
+  min-width: 180px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 25px;
+  z-index: 1001;
+  height: 25px;
+
+  a {
+    color: #333;
+    transition: color 0.3s;
+  }
 }

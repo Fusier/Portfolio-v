@@ -4,7 +4,7 @@ import ResumeItem from "../../components/ResumeItem/resumeItem";
 
 const ExperiencePage: React.FC = () => {
   return (
-    <section id="resume" className="resume-section">
+    <section id="experience" className="resume-section">
       <h2 className="resume-title">Experience</h2>
       <div className="resume-list">
         <div>
