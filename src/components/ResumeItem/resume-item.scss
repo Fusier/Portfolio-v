@@ -1,0 +1,15 @@
+.resume-item {
+  position: relative;
+  width: 80%;
+  justify-self: center;
+  border-bottom: 2px solid deepskyblue;
+
+  .resume-content {
+    padding: 15px;
+    background-color: rgb(180, 180, 180);
+  }
+
+  &:last-child::before {
+    bottom: 0;
+  }
+}
