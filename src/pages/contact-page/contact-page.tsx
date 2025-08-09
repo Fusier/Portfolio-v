@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact-page.scss";
-import ContactForm from "../../components/ContactForm/ContactForm";
+import ContactForm from "../../components/ContactForm/contact-form";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -16,7 +16,7 @@ const ContactPage: React.FC = () => {
           <h3 className="message-me">Message Me</h3>
           <ContactForm />
         </div>
-        <div className="column">
+        <div className="column contact-information">
           <h3 className="contact-title">Contact Information</h3>
           <div className="contact-text">
             <p className="sub-text contact-title">
@@ -30,7 +30,7 @@ const ContactPage: React.FC = () => {
             </div>
             <div className="contact-item">
               <MdEmail className="icon" color="deepskyblue" size={"30px"} />
-              <p className="sub-text">samu.willman.usa@gmail.com</p>
+              <p className="sub-text">samu.willman.work@gmail.com</p>
             </div>
             <div className="contact-item">
               <FaLocationDot

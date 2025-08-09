@@ -8,7 +8,12 @@ const AboutPage: React.FC = () => {
       <h2 className="about-title">About Me</h2>
       <div className="about-content">
         <div className="image-section">
-          <img className="image" src={samuAboutImage} alt="Samu" />
+          <img
+            className="image"
+            loading="lazy"
+            src={samuAboutImage}
+            alt="Samu"
+          />
         </div>
         <div className="text-section">
           <h2 className="top-title">Who am I?</h2>
@@ -53,17 +58,13 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="contact-info">
             <p>
-              Name: <span className="sub-text"> Samu Willman</span>
-            </p>
-            <p>
-              Email:{" "}
-              <span className="sub-text "> samu.willman.usa@gmail.com</span>
-            </p>
-            <p>
-              Phone Number: <span className="sub-text"> +1 (617) 581-8784</span>
+              Name:
+              <br></br>
+              <span className="sub-text"> Samu Willman</span>
             </p>
             <p>
               Spoken Languages:
+              <br></br>
               <span className="sub-text"> Finnish, English, Swedish</span>
             </p>
           </div>
