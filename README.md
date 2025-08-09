@@ -14,7 +14,7 @@ A modern, responsive, single-page portfolio built with **React**, **TypeScript**
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React 18, TypeScript, SCSS
+- **Frontend:** React 19, TypeScript, SCSS, HTML
 - **Bundler:** Vite
 - **Routing:** React Router DOM
 - **Animations:** Framer Motion
