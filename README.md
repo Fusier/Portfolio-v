@@ -20,9 +20,3 @@ A modern, responsive, single-page portfolio built with **React**, **TypeScript**
 - **Animations:** Framer Motion
 - **UI Components:** Material UI (MUI)
 - **Icons:** react-icons
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
