@@ -7,9 +7,14 @@ import ExperiencePage from "./pages/experience-page/experience-page";
 import HomePage from "./pages/home-page/home-page";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./components/Footer/Footer";
+import { useEffect } from "react";
 
 function App() {
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <>
