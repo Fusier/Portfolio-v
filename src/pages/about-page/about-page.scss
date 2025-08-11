@@ -1,17 +1,17 @@
 @import "../../variables";
 
-.about-section {
+.about {
   display: flex;
   flex-direction: column;
   min-height: $section-height;
 
-  .about-title {
+  &__title {
     text-align: center;
     font-size: 2rem;
-    margin: 5px;
+    margin: $small;
   }
 
-  .about-content {
+  &__content {
     display: flex;
     flex: 1;
     align-items: center;
@@ -19,60 +19,53 @@
     width: 90%;
   }
 
-  .image-section {
+  &__image__wrapper {
     display: flex;
     justify-content: center;
 
-    .image {
-      object-fit: cover;
+    &__image {
       width: 520px;
-      margin-top: 0;
     }
   }
 
-  @media only screen and (max-width: $desktop) {
-    .image {
-      min-width: 250px;
-      max-width: 320px;
-      width: auto;
-    }
-
-    .about-content {
-      flex-direction: column;
-    }
-  }
-  .text-section {
+  &__text {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: $extra-large;
+  }
 
-    .top-title {
-      color: deepskyblue;
-    }
+  &__text-heading {
+    color: $highlight-color;
+  }
 
-    .margin {
-      margin: 0;
-    }
+  &__text-subheading--no-margin {
+    margin: 0;
+  }
 
-    .sub-title {
-      font-size: 17px;
-      font-family: "Poppins";
-    }
+  &__paragraph {
+    color: rgb(180, 180, 180);
+  }
 
-    .border-bottom {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.08);
-      margin-bottom: 0;
-      padding-bottom: 29px;
-    }
+  &__paragraph--border-bottom {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
 
-    .contact-info {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-    }
+  &__contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+}
 
-    .padding-top {
-      padding-top: 20px;
-    }
+@media only screen and (max-width: $desktop) {
+  .about__image__wrapper__image {
+    min-width: 250px;
+    max-width: 310px;
+  }
+
+  .about__content {
+    flex-direction: column;
   }
 }
