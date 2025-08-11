@@ -52,7 +52,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
-      <div className="form-group">
+      <div className="contact-form__group">
         <input
           type="text"
           id="name"
@@ -61,10 +61,11 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           required
           placeholder="Your Name"
+          className="contact-form__input"
         />
       </div>
 
-      <div className="form-group">
+      <div className="contact-form__group">
         <input
           type="tel"
           id="phone"
@@ -73,10 +74,11 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           required
           placeholder="Your Phone Number"
+          className="contact-form__input"
         />
       </div>
 
-      <div className="form-group">
+      <div className="contact-form__group">
         <input
           type="email"
           id="email"
@@ -85,16 +87,17 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           required
           placeholder="Your Email"
+          className="contact-form__input"
         />
       </div>
 
-      <div className="form-group">
+      <div className="contact-form__group">
         <textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="disable-resize"
+          className="contact-form__textarea"
           required
           placeholder="Your Message"
         ></textarea>
@@ -102,7 +105,7 @@ const ContactForm: React.FC = () => {
 
       <Button
         variant="contained"
-        className="button-color"
+        className="contact-form__button"
         sx={{
           borderRadius: 0,
         }}
@@ -110,8 +113,8 @@ const ContactForm: React.FC = () => {
       >
         Submit
       </Button>
-      {sentState === true && <p className="sent">Sent!</p>}
-      {sentState === false && <p className="error">Error!</p>}
+      {sentState === true && <p className="contact-form__sent">Sent!</p>}
+      {sentState === false && <p className="contact-form__error">Error!</p>}
     </form>
   );
 };

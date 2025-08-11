@@ -1,71 +1,96 @@
 import React from "react";
 import "./about-page.scss";
-import samuAboutImage from "../../assets/samu_beach.jpg";
+import samuAboutImage from "../../assets/samu_about.png";
 
 const AboutPage: React.FC = () => {
   return (
-    <section id="about" className="about-section">
-      <h2 className="about-title">About Me</h2>
-      <div className="about-content">
-        <div className="image-section">
+    <section id="about" className="about">
+      <h2 className="about__title">About Me</h2>
+      <div className="about__content">
+        <div className="about__image__wrapper">
           <img
-            className="image"
+            className="about__image__wrapper__image"
             loading="lazy"
             src={samuAboutImage}
             alt="Samu"
           />
         </div>
-        <div className="text-section">
-          <h2 className="top-title">Who am I?</h2>
-          <h3 className="margin">Bostonian with that Finnishing touch 😉</h3>
-          <div className="sub-title">
-            <p className="sub-text">
-              I'm a passionate software developer with eight years of overall
-              programming experience with over three of those in real-world
-              production environments. I enjoy working in dynamic teams and take
-              pride in building solutions that are scalable, maintainable, and
-              future-ready.
+        <div className="about__text">
+          <h2 className="about__text-heading">Who am I?</h2>
+          <h3 className="about__text-subheading about__text-subheading--no-margin">
+            Bostonian with that Finnishing touch 😉
+          </h3>
+          <div className="about__description">
+            <p className="about__paragraph">
+              I’m a detail-oriented software developer with over three years of
+              professional experience designing, building, and maintaining
+              scalable web applications. I've worked with technologies such as
+              React, Angular, TypeScript, Spring Boot, Java, and AWS, and my
+              background includes both front-end and back-end development, as
+              well as designing clean, user-friendly websites that deliver
+              excellent user experiences.
             </p>
-            <p className="sub-text">
-              A highlight of my career was leading and maintaining a major
-              product for an S&P 500 company, where I gained valuable experience
-              in clean architecture, accountability, and delivering real
-              business value at scale. I’ve worked on both innovative new
-              projects and legacy systems — both offering unique challenges I
-              enjoy solving. I'm well-versed in multiple front-end, back-end and
-              cloud technologies. I love working across the full stack and
-              bridging the gap between complex systems and great user
-              experiences.
+
+            <p className="about__paragraph">
+              My interest in coding started when I was young, but it truly
+              became a passion after I began my studies in Business Information
+              Systems at Tampere University of Applied Sciences. That program
+              gave me the opportunity to explore software development in depth,
+              and I quickly realized it was the career I wanted to pursue. I'm
+              driven by the reward of creating something functional and
+              well-crafted, which is why I enjoy dedicating myself to a project.
+              My work has been described as “superb” and “outstanding” by
+              clients, which motivates me to maintain high standards in every
+              project I take on.
             </p>
-            <p className="sub-text">
-              I hold a degree in Business Information Systems, giving me a
-              strong understanding of both technology and the business context
-              that drives it. I believe the best software is built where
-              technical quality meets strategic insight. I'm easygoing, curious,
-              and constantly striving to improve. Whether it's refining old code
-              or building something entirely new, I’m driven to create solutions
-              that are not only effective today but sustainable for the future.
+
+            <p className="about__paragraph">
+              A highlight of my career was managing and contributing to an
+              enterprise product for an S&P 500 client, ensuring high
+              performance, scalability, and maintainability. I participated in
+              both development and design phases, collaborated in Agile Scrum
+              teams, and maintained production codebases used by tens of
+              thousands of users. My experience includes writing robust unit and
+              end-to-end tests with Cypress, JUnit, and Jest, significantly
+              improving release reliability and reducing regression issues.
             </p>
-            <p className="border-bottom sub-text">
-              I'm originally from Finland, which has definitely influenced how I
-              approach work — practical, focused, and always aiming for clean,
-              efficient solutions. Outside of development, I stay active by
-              going to the gym, and when I have some extra free time, I enjoy
-              playing video games. Both help me recharge, stay sharp, and think
-              creatively — whether I'm problem-solving in code or just taking a
-              breather between projects.
+
+            <p className="about__paragraph">
+              Beyond my work on enterprise products, I’ve delivered full-stack
+              features for internal tools and integrations that improved
+              interoperability between major service providers. I’m experienced
+              in working with cross-functional teams, conducting code reviews,
+              and contributing to CI/CD pipelines for automated AWS deployments.
+              I value continuous improvement in both code quality and
+              development processes, and I’m always looking for ways to make
+              systems more efficient and maintainable.
+            </p>
+
+            <p className="about__paragraph about__paragraph--border-bottom">
+              Originally from Finland and now based in the Boston area, I bring
+              a practical, collaborative, and design-conscious approach to my
+              work. My long-term goal is to lead a large-scale development
+              project as a team lead, combining technical expertise with
+              leadership to guide a team toward building impactful products.
+              Whether refining existing systems or creating something entirely
+              new, I aim to deliver solutions that are impactful today and built
+              to last.
             </p>
           </div>
-          <div className="contact-info">
+          <div className="about__contact">
             <p>
               Name:
-              <br></br>
-              <span className="sub-text"> Samu Willman</span>
+              <br />
+              <span className="about__contact-value sub-text">
+                Samu Willman
+              </span>
             </p>
             <p>
               Spoken Languages:
-              <br></br>
-              <span className="sub-text"> Finnish, English, Swedish</span>
+              <br />
+              <span className="about__contact-value sub-text">
+                Finnish, English, Swedish
+              </span>
             </p>
           </div>
         </div>

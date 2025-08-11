@@ -13,9 +13,9 @@ export default function ResumeItem({
 }: ResumeItemProps) {
   return (
     <div className="resume-item">
-      <h3>{title}</h3>
-      <h4 className="sub-text">{subTitle}</h4>
-      <p className="sub-text">{description}</p>
+      <h3 className="resume-item__title">{title}</h3>
+      <h4 className="resume-item__subtitle sub-text">{subTitle}</h4>
+      <p className="resume-item__description sub-text">{description}</p>
     </div>
   );
 }

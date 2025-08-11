@@ -7,38 +7,46 @@ import { MdEmail } from "react-icons/md";
 
 const ContactPage: React.FC = () => {
   return (
-    <section id="contact" className="form-section">
+    <section id="contact" className="contact">
       <div>
-        <h2 className="about-title">Get in Touch</h2>
+        <h2 className="contact__title">Get in Touch</h2>
       </div>
-      <div className="main">
-        <div className="column">
-          <h3 className="message-me">Message Me</h3>
+      <div className="contact__main">
+        <div className="contact__column">
+          <h3 className="contact__message-title">Message Me</h3>
           <ContactForm />
         </div>
-        <div className="column contact-information">
-          <h3 className="contact-title">Contact Information</h3>
-          <div className="contact-text">
-            <p className="sub-text contact-title">
+        <div className="contact__column contact__column--info">
+          <h3 className="contact__info-title">Contact Information</h3>
+          <div className="contact__text">
+            <p className="contact__text-description">
               Currently living in Boston but available for projects all around
               USA. Don't hesitate to contact me whether it's a work opportunity
               or a freelance project!
             </p>
-            <div className="contact-item">
-              <FaPhoneAlt className="icon" color="deepskyblue" size={"30px"} />
-              <p className="sub-text">+1 (617) 581-8784</p>
-            </div>
-            <div className="contact-item">
-              <MdEmail className="icon" color="deepskyblue" size={"30px"} />
-              <p className="sub-text">samu.willman.work@gmail.com</p>
-            </div>
-            <div className="contact-item">
-              <FaLocationDot
-                className="icon"
+            <div className="contact__item">
+              <FaPhoneAlt
+                className="contact__icon"
                 color="deepskyblue"
                 size={"30px"}
               />
-              <p className="sub-text">Boston, MA</p>
+              <p className="contact__sub-text">+1 (617) 581-8784</p>
+            </div>
+            <div className="contact__item">
+              <MdEmail
+                className="contact__icon"
+                color="deepskyblue"
+                size={"30px"}
+              />
+              <p className="contact__sub-text">samu.willman.work@gmail.com</p>
+            </div>
+            <div className="contact__item">
+              <FaLocationDot
+                className="contact__icon"
+                color="deepskyblue"
+                size={"30px"}
+              />
+              <p className="contact__sub-text">Boston, MA</p>
             </div>
           </div>
         </div>

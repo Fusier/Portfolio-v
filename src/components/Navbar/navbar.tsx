@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.scss";
-import {
-  FaGithub,
-  FaFacebook,
-  FaLinkedin,
-  FaInstagram,
-  FaBars,
-  FaTimes,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
@@ -34,21 +27,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="navbar">
-      <div className="social-icons">
-        <a
-          href="https://github.com/Fusier"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub size={30} color="white" />
-        </a>
-        <a
-          href="https://www.facebook.com/samu.willman.5/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook size={30} color="white" />
-        </a>
+      <div className="navbar__social-icons">
         <a
           href="https://fi.linkedin.com/in/samu-willman"
           target="_blank"
@@ -57,50 +36,53 @@ const Navbar: React.FC = () => {
           <FaLinkedin size={30} color="white" />
         </a>
         <a
-          href="https://www.instagram.com/samuwillman/"
+          href="https://github.com/Fusier"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram size={30} color="white" />
+          <FaGithub size={30} color="white" />
         </a>
       </div>
 
-      <div className="desktop-only">
+      <div className="navbar__cv-button-wrapper navbar__desktop-only">
         <Button
           component="a"
           href={Willman_Samu_CV}
           download
           variant="contained"
-          className="button"
+          className="navbar__cv-button"
           sx={{
             borderRadius: 0,
             maxWidth: "170px",
             minWidth: "120px",
           }}
-          startIcon={<DownloadIcon className="vertical-align-middle" />}
+          startIcon={<DownloadIcon className="navbar__icon--vertical-middle" />}
         >
           Download CV
         </Button>
       </div>
 
-      <div className="_anchor desktop-only">
-        <ul>
-          <li>
+      <div className="navbar__links navbar__desktop-only">
+        <ul className="navbar__list">
+          <li className="navbar__list-item">
             <Link to="/home">Home</Link>
           </li>
-          <li>
+          <li className="navbar__list-item">
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className="navbar__list-item">
             <Link to="/experience">Experience</Link>
           </li>
-          <li>
+          <li className="navbar__list-item">
             <Link to="/contact">Contact Me</Link>
           </li>
         </ul>
       </div>
 
-      <div className="mobile-only burger-icon" onClick={toggleMobileNav}>
+      <div
+        className="navbar__burger navbar__mobile-only"
+        onClick={toggleMobileNav}
+      >
         {isMobileNavOpen ? (
           <FaTimes size={30} color="white" />
         ) : (
@@ -109,24 +91,24 @@ const Navbar: React.FC = () => {
       </div>
 
       {isMobileNavOpen && (
-        <div className="mobile-menu">
-          <ul>
-            <li>
+        <div className="navbar__mobile-menu">
+          <ul className="navbar__mobile-list">
+            <li className="navbar__mobile-item">
               <Link to="/home" onClick={toggleMobileNav}>
                 Home
               </Link>
             </li>
-            <li>
+            <li className="navbar__mobile-item">
               <Link to="/about" onClick={toggleMobileNav}>
                 About
               </Link>
             </li>
-            <li>
+            <li className="navbar__mobile-item">
               <Link to="/experience" onClick={toggleMobileNav}>
                 Experience
               </Link>
             </li>
-            <li>
+            <li className="navbar__mobile-item">
               <Link to="/contact" onClick={toggleMobileNav}>
                 Contact Me
               </Link>
@@ -137,14 +119,16 @@ const Navbar: React.FC = () => {
             href={Willman_Samu_CV}
             download
             variant="contained"
-            className="button mobile-center"
+            className="navbar__cv-button navbar__mobile-center"
             sx={{
               borderRadius: 0,
               maxWidth: "170px",
               minWidth: "120px",
               marginTop: "10px",
             }}
-            startIcon={<DownloadIcon className="vertical-align-middle" />}
+            startIcon={
+              <DownloadIcon className="navbar__icon--vertical-middle" />
+            }
           >
             Download CV
           </Button>
