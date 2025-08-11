@@ -30,3 +30,9 @@
     align-items: center;
   }
 }
+
+@media only screen and (max-width: $tablet) {
+  .experience {
+    margin-bottom: $large;
+  }
+}
