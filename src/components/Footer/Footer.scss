@@ -3,12 +3,14 @@
   margin: 0;
   text-align: center;
   z-index: 98;
+  height: 45.5px;
 
   .copyright {
     align-content: center;
 
     .text {
       text-decoration: none;
+      font-size: small;
     }
   }
 }

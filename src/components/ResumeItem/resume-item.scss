@@ -1,15 +1,25 @@
+@import "../../variables";
+
 .resume-item {
   position: relative;
   width: 80%;
   justify-self: center;
-  border-bottom: 2px solid deepskyblue;
+  border-bottom: 2px solid $highlight-color;
 
-  .resume-content {
-    padding: 15px;
+  &__content {
+    padding: $large;
     background-color: rgb(180, 180, 180);
   }
 
   &:last-child::before {
     bottom: 0;
+  }
+
+  &__title {
+    margin-bottom: $small;
+  }
+
+  &__subtitle {
+    margin-top: 0px;
   }
 }

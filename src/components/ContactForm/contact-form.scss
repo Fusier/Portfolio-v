@@ -1,53 +1,55 @@
+@import "../../variables";
+
 .contact-form {
   max-width: 700px;
   padding-top: 0px;
-}
 
-.contact-form .form-group {
-  margin-bottom: 20px;
-}
+  &__group {
+    margin-bottom: $extra-large;
+  }
 
-.form-group:first-child {
-  padding-top: 10px;
-}
+  &__group:first-child {
+    padding-top: $medium;
+  }
 
-.contact-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
+  &__label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: $small;
+  }
 
-.contact-form input,
-.contact-form textarea {
-  width: -webkit-fill-available;
-  width: -moz-available;
-  width: fill-available;
-  padding: 10px;
-  font-size: 1rem;
-}
+  &__input,
+  &__textarea {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+    padding: $medium;
+    font-size: 1rem;
+  }
 
-.contact-form textarea {
-  height: 100px;
-  resize: vertical;
-}
+  &__textarea {
+    height: 100px;
+    resize: vertical;
+  }
 
-.contact-form button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-color: black;
-  border-style: solid;
-  border-width: 3px;
-  border: none;
-  cursor: pointer;
-  background-color: deepskyblue;
-}
+  &__button {
+    padding: $medium $extra-large;
+    font-size: 1rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border: none;
+    cursor: pointer;
+    background-color: deepskyblue;
+  }
 
-.submit {
-  margin-bottom: 20px;
-}
+  &__submit {
+    margin-bottom: $extra-large;
+  }
 
-.sent,
-.error {
-  display: inline-block;
-  margin-left: 10px;
+  &__sent,
+  &__error {
+    display: inline-block;
+    margin-left: $medium;
+  }
 }

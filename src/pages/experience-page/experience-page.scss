@@ -1,18 +1,18 @@
 @import "../../variables";
 
-.resume-section {
+.experience {
   display: flex;
   background-color: rgba(0, 0, 0, 1);
   flex-direction: column;
   min-height: $section-height;
 
-  .resume-title {
+  &__title {
     text-align: center;
     font-size: 2rem;
-    margin: 5px;
+    margin: $small;
   }
 
-  .sticky-heading {
+  &__sticky-heading {
     position: sticky;
     z-index: 5;
     font-size: 48px;
@@ -23,18 +23,10 @@
     justify-self: left;
   }
 
-  .resume-list {
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 40px;
     align-items: center;
   }
-}
-
-h4 {
-  margin-top: 0px;
-}
-
-h3 {
-  margin-bottom: 5px;
 }

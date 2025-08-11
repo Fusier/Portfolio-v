@@ -1,92 +1,73 @@
 @import "../../variables";
 
-.form-section {
+.contact {
   display: flex;
   min-height: $section-height;
   flex-direction: column;
 
-  .column {
+  &__column {
     display: flex;
     flex-direction: column;
     flex: 1;
 
-    &.contact-information {
-      padding-left: 20px;
+    &--info {
+      padding-left: $extra-large;
     }
   }
 
-  .about-title {
+  &__title {
     text-align: center;
     font-size: 2rem;
-    margin: 5px;
+    margin: $small;
   }
 
-  .message-me,
-  .contact-title {
-    margin-bottom: 10px;
+  &__message-title,
+  &__info-title {
+    margin-bottom: $medium;
   }
 
-  .main {
+  &__main {
     display: flex;
     flex: 1;
     width: 80%;
     align-self: center;
   }
 
-  .contact-text {
+  &__text {
     display: flex;
     flex-direction: column;
     flex: 1;
     width: 100%;
-    padding-top: 5px;
+    padding-top: $small;
 
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      padding-top: 30px;
-    }
-
-    .icon {
-      flex-shrink: 0;
-    }
-
-    .sub-text {
-      margin: 0;
+    &-description {
+      margin-top: 0;
+      padding-top: $small;
     }
   }
-}
 
-.form-section a {
-  text-decoration: none;
-}
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: $large;
+    padding-top: 30px;
+  }
 
-.form-section a:hover {
-  text-decoration: underline;
-}
+  &__icon {
+    flex-shrink: 0;
+  }
 
-.section-title {
-  text-align: center;
-}
-
-.content-overlay {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.white-text {
-  color: white;
+  &__sub-text {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: $tablet) {
-  .main {
+  .contact__main {
     flex-direction: column;
   }
 
-  .form-section .column.contact-information {
+  .contact__column--info {
     padding-left: 0px;
   }
 }

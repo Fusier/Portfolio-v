@@ -8,9 +8,8 @@ $small: 5px;
 $medium: 10px;
 $large: 15px;
 $extra-large: 20px;
-$extra-extra-large: 25px;
 
-$footer-height: 56px;
+$footer-height: 45.5px;
 $navbar-height: 75px;
 
 $section-height: calc(100vh - $navbar-height - $footer-height);
@@ -22,11 +21,3 @@ $main-text-color: white;
 $highlight-color: deepskyblue;
 $social-icons-color: #333;
 $sub-text-color: rgb(180, 180, 180);
-
-// Light mode:
-$background-color: white;
-$main-text-color: black;
-$highlight-color: deepskyblue;
-$social-icons-color: #c9c9c9;
-
-$home-page-text-index: 1001;

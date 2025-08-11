@@ -1,6 +1,4 @@
-$mobile-landscape: 568px;
-$tablet: 768px;
-$desktop: 992px;
+@import "../../variables";
 
 .navbar {
   margin: 0;
@@ -15,7 +13,7 @@ $desktop: 992px;
   transition: all 0.3s ease;
   width: 100%;
 
-  ._logo {
+  &__logo {
     font-family: "Poppins", cursive;
     font-size: 2rem;
     font-weight: bold;
@@ -23,68 +21,68 @@ $desktop: 992px;
     text-decoration: none;
   }
 
-  ._anchor {
+  &__links {
     margin-left: auto;
   }
 
-  ._anchor ul {
+  &__list {
     list-style: none;
     display: flex;
     gap: 20px;
     margin: 0;
     padding-right: 30px;
-  }
 
-  ._anchor ul li a {
-    text-decoration: none;
-    color: white;
-    vertical-align: middle;
-  }
-}
-
-.button {
-  min-width: 180px;
-}
-
-.social-icons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 25px;
-}
-
-.desktop-only {
-  display: flex;
-}
-
-.mobile-only {
-  display: none;
-}
-
-.burger-icon {
-  cursor: pointer;
-  padding: 0 20px;
-  z-index: 50;
-}
-
-.mobile-menu {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  height: fit-content;
-  background: rgba(30, 30, 30);
-  display: flex;
-  padding: 25px;
-  flex-direction: column;
-  align-items: flex-start;
-
-  ul {
-    list-style: none;
-
-    li {
-      margin: 30px 0;
-      text-align: center;
+    &-item a {
+      text-decoration: none;
+      color: white;
+      vertical-align: middle;
     }
+  }
+
+  &__cv-button {
+    min-width: 180px;
+  }
+
+  &__social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 25px;
+  }
+
+  &__desktop-only {
+    display: flex;
+  }
+
+  &__mobile-only {
+    display: none;
+  }
+
+  &__burger {
+    cursor: pointer;
+    padding: 0 20px;
+    z-index: 50;
+  }
+
+  &__mobile-menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: fit-content;
+    background: rgba(30, 30, 30);
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__mobile-list {
+    list-style: none;
+  }
+
+  &__mobile-item {
+    margin: 30px 0;
+    text-align: center;
 
     a {
       text-decoration: none;
@@ -92,20 +90,20 @@ $desktop: 992px;
       display: block;
     }
   }
+
+  &__mobile-center {
+    align-self: center;
+  }
 }
 
 @media (max-width: $tablet) {
-  .desktop-only {
+  .navbar__desktop-only {
     display: none;
   }
 
-  .mobile-only {
+  .navbar__mobile-only {
     display: block;
     position: fixed;
     right: 0;
-  }
-
-  .mobile-center {
-    align-self: center;
   }
 }
