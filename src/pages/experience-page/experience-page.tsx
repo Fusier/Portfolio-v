@@ -10,7 +10,7 @@ const ExperiencePage: React.FC = () => {
         <ResumeItem
           title="Bitwise Oy"
           subTitle="04/2022 - 11/2024"
-          description="Managed and developed features for two large-scale enterprise applications, including a product for an S&P 500 client, as part of a 20-member cross-functional Agile Scrum team. Contributed to both development and website design, collaborating with designers, product owners, and scrum masters to translate requirements into scalable, maintainable solutions. Built cross-platform features using Angular, NgRx, TypeScript, HTML, Electron and SCSS. Maintained clean architecture, implemented reusable components, and wrote automated tests with Jest to improve release reliability and reduce regression issues. Actively participated in Agile ceremonies, code reviews, and CI/CD pipeline improvements."
+          description="Managed and developed features for two large-scale enterprise applications, including a product for an S&P 500 client, as part of a 20-member cross-functional Agile Scrum team. Contributed to both development and website design, collaborating with designers, product owners, and scrum masters to translate requirements into scalable, maintainable solutions. Built cross-platform features using Angular, NgRx, TypeScript, Node.js, HTML, Electron and SCSS. Maintained clean architecture, implemented reusable components, and wrote automated tests with Jest to improve release reliability and reduce regression issues. Actively participated in Agile ceremonies, code reviews, and CI/CD pipeline improvements."
         />
         <ResumeItem
           title="Monad Oy"
