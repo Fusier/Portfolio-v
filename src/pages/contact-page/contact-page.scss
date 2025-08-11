@@ -62,7 +62,7 @@
   }
 }
 
-@media only screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .contact__main {
     flex-direction: column;
   }

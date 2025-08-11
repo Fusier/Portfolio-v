@@ -29,3 +29,9 @@
     object-position: 79% center;
   }
 }
+
+@media (max-width: $tablet) {
+  .home {
+    margin-bottom: 0px;
+  }
+}

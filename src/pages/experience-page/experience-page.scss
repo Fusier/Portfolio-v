@@ -31,7 +31,7 @@
   }
 }
 
-@media only screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .experience {
     margin-bottom: $large;
   }
