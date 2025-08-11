@@ -12,7 +12,7 @@ $extra-large: 20px;
 $footer-height: 45.5px;
 $navbar-height: 75px;
 
-$section-height: calc(100vh - $navbar-height - $footer-height);
+$section-height: calc(100dvh - $navbar-height - $footer-height);
 
 // Dark mode:
 $background-color: black;
