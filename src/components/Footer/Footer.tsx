@@ -4,10 +4,13 @@ import "./Footer.scss";
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <div className="copyright">
-        <p className="text">
+      <div className="footer__copyright">
+        <p className="footer__text">
           &copy; {new Date().getFullYear()} Samu Willman. All rights reserved.{" "}
-          <a className="text" href="https://github.com/Fusier">
+          <a
+            className="footer__link"
+            href="https://github.com/Fusier/Portfolio-v"
+          >
             Source code
           </a>
         </p>
