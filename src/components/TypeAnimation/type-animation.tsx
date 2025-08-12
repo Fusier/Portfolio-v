@@ -1,13 +1,14 @@
 import { TypeAnimation } from "react-type-animation";
+import "./type-animation.scss";
 
 const TypeAnimationComponent = () => {
   return (
     <TypeAnimation
       sequence={["Hi, nice to meet you. I'm Samu"]}
-      wrapper="p"
+      wrapper="h4"
       speed={30}
       cursor={false}
-      style={{ fontSize: "3em", display: "inline-block", color: "white" }}
+      className="animation"
       repeat={0}
     />
   );

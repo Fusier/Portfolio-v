@@ -7,9 +7,7 @@ const HomePage: React.FC = () => {
   return (
     <section className="home" id="home">
       <div className="home__text">
-        <h4 className="home__text-heading">
-          <TypeAnimationComponent />
-        </h4>
+        <TypeAnimationComponent />
       </div>
       <img
         className="home__image"

@@ -1,0 +1,15 @@
+@import "../../variables";
+
+.animation {
+  font-size: 3em;
+  display: inline-block;
+  color: $main-text-color;
+}
+
+@media (max-width: $mobile) {
+  .animation {
+    font-size: 1.35em;
+    width: 100vw;
+    text-align: center;
+  }
+}
