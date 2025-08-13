@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
       <div className="navbar__links navbar__desktop-only">
         <ul className="navbar__list">
           <li className="navbar__list-item">
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li className="navbar__list-item">
             <Link to="/about">About</Link>
