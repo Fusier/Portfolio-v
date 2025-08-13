@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import Willman_Samu_CV from "../../assets/Willman_Samu_CV.pdf";
+import { motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -91,7 +92,16 @@ const Navbar: React.FC = () => {
       </div>
 
       {isMobileNavOpen && (
-        <div className="navbar__mobile-menu">
+        <motion.div
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 20,
+          }}
+          className="navbar__mobile-menu"
+        >
           <ul className="navbar__mobile-list">
             <li className="navbar__mobile-item">
               <Link to="/home" onClick={toggleMobileNav}>
@@ -124,7 +134,6 @@ const Navbar: React.FC = () => {
               borderRadius: 0,
               maxWidth: "170px",
               minWidth: "120px",
-              marginTop: "10px",
             }}
             startIcon={
               <DownloadIcon className="navbar__icon--vertical-middle" />
@@ -132,7 +141,7 @@ const Navbar: React.FC = () => {
           >
             Download CV
           </Button>
-        </div>
+        </motion.div>
       )}
     </div>
   );
