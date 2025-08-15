@@ -1,16 +1,14 @@
 import "./resume-item.scss";
 
-type ResumeItemProps = {
-  title?: string;
-  subTitle?: string;
-  description?: string;
-};
-
 export default function ResumeItem({
   title,
   subTitle,
   description,
-}: ResumeItemProps) {
+}: {
+  title?: string;
+  subTitle?: string;
+  description?: string;
+}) {
   return (
     <div className="resume-item">
       <h3 className="resume-item__title">{title}</h3>
