@@ -2,15 +2,11 @@
 
 A modern, responsive, single-page portfolio built with **React**, **TypeScript**, **Vite**, and **Framer Motion**.
 
----
-
 ## 🚀 Features
 
 - **Single Page Application (SPA)**
 - **Page transitions**
 - **Responsive design**
-
----
 
 ## 🛠️ Tech Stack
 
