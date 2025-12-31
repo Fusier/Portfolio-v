@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import Willman_Samu_CV from "../../assets/Willman_Samu_CV.pdf";
+import Willman_Samu_Resume from "../../assets/Samu_Willman_Resume.pdf";
 import { motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
       <div className="navbar__cv-button-wrapper navbar__desktop-only">
         <Button
           component="a"
-          href={Willman_Samu_CV}
+          href={Willman_Samu_Resume}
           download
           variant="contained"
           className="navbar__cv-button"
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
           </ul>
           <Button
             component="a"
-            href={Willman_Samu_CV}
+            href={Willman_Samu_Resume}
             download
             variant="contained"
             className="navbar__cv-button navbar__mobile-center"
