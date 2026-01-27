@@ -8,6 +8,7 @@ import HomePage from "./pages/home-page/home-page";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./components/Footer/Footer";
 import { useEffect } from "react";
+import PortfolioPage from "./pages/portfolio-page/portfolio-page";
 
 function App() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
               <Route path="/home" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/experience" element={<ExperiencePage />} />
+              <Route path="/portfolio" element={<PortfolioPage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>
           </motion.div>

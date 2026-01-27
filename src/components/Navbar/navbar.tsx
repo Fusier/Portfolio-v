@@ -75,6 +75,9 @@ const Navbar: React.FC = () => {
             <Link to="/experience">Experience</Link>
           </li>
           <li className="navbar__list-item">
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li className="navbar__list-item">
             <Link to="/contact">Contact Me</Link>
           </li>
         </ul>
@@ -116,6 +119,11 @@ const Navbar: React.FC = () => {
             <li className="navbar__mobile-item">
               <Link to="/experience" onClick={toggleMobileNav}>
                 Experience
+              </Link>
+            </li>
+            <li className="navbar__mobile-item">
+              <Link to="/portfolio" onClick={toggleMobileNav}>
+                Portfolio
               </Link>
             </li>
             <li className="navbar__mobile-item">
