@@ -1,0 +1,71 @@
+:root {
+  --bg-color: rgb(20, 20, 20);
+}
+
+.card {
+  background-color: var(--card-color);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  width: 390px;
+  height: 340px;
+  min-width: 150px;
+  transition: transform 0.5s;
+
+  &--hovered {
+    transform: translateY(-10px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, 0.1),
+      transparent 30%
+    );
+    opacity: 0;
+    transition: opacity 500ms;
+    z-index: 3;
+  }
+
+  &--hovered::before {
+    opacity: 1;
+  }
+
+  &__image {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  &__content {
+    position: absolute;
+    inset: 1px;
+    padding: 0px 0px 0px 0px;
+    z-index: 2;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+  &__info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__title {
+    h3 {
+      font-size: 1.1em;
+      margin: 0;
+    }
+
+    h4 {
+      font-size: 0.85em;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 4px;
+    }
+  }
+}
