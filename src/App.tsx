@@ -30,7 +30,7 @@ function App() {
             transition={{ duration: 0.8 }}
           >
             <Routes location={location}>
-              <Route path="/" element={<HomePage />} />
+              <Route path="" element={<HomePage />} />
               <Route path="/home" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/experience" element={<ExperiencePage />} />
