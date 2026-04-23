@@ -23,6 +23,10 @@
 
   &__links {
     margin-left: auto;
+
+    :hover {
+      color: deepskyblue;
+    }
   }
 
   &__list {
